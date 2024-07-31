@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body {
+  background-image: url("./1255445.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .bgDiv {
   display: flex;
   justify-content: center;
@@ -66,4 +71,18 @@
 .btn-div .btn:hover {
   color: rgb(240, 3, 3);
   font-weight: bold;
+  opacity: 0.6;
+}
+
+.btn-down {
+  padding: 0.5rem;
+  margin-bottom: 5rem;
+  background-color: darkslateblue;
+  cursor: pointer;
+  color: chartreuse;
+  font-size: 0.7rem;
+}
+
+.btn-down:hover {
+  opacity: 0.6;
 }

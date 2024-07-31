@@ -2,10 +2,21 @@ const backgroundColor = document.querySelector(".bgDiv");
 
 const buttonClick = document.querySelector(".btn-click");
 
+const butonOver = document.querySelector(".btn-over");
+
+const butonKeyDown=document.querySelector(".btn-down");
+
 buttonClick.addEventListener("click", function () {
   const newColor = randomColors();
   backgroundColor.style.backgroundColor = newColor;
 });
+
+butonOver.addEventListener("mouseover", function () {
+  const newColor = randomColors(); // degiskene atadik cunku birden fazla kere bu fonksiyonu kullanabiliriz.
+  backgroundColor.style.backgroundColor = newColor;
+});
+
+
 
 function randomColors() {
   const colorLetters = "0123456789ABCDEF";
