@@ -1,10 +1,7 @@
 const backgroundColor = document.querySelector(".bgDiv");
-
 const buttonClick = document.querySelector(".btn-click");
-
 const butonOver = document.querySelector(".btn-over");
-
-const butonKeyDown=document.querySelector(".btn-down");
+const butonKeyDown = document.querySelector(".btn-down");
 
 buttonClick.addEventListener("click", function () {
   const newColor = randomColors();
@@ -16,8 +13,12 @@ butonOver.addEventListener("mouseover", function () {
   backgroundColor.style.backgroundColor = newColor;
 });
 
-
-
+butonKeyDown.setAttribute("tabindex", "0");
+butonKeyDown.addEventListener("keydown", function () {
+  const newColor = randomColors();
+  backgroundColor.style.backgroundColor = newColor;
+});
+as;
 function randomColors() {
   const colorLetters = "0123456789ABCDEF";
   let color = "#";
