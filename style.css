@@ -51,11 +51,11 @@ body {
     .btn {
       border: none;
       border-radius: 2rem;
-      width: 16%;
-      height: 13%;
+      width: 25%;
+      height: 15%;
       padding: 1rem;
       cursor: pointer;
-      font-size: 0.5rem;
+      font-size: 1rem;
       text-align: center;
       color: #030000;
     }
@@ -81,7 +81,7 @@ body {
   background-color: darkslateblue;
   cursor: pointer;
   color: chartreuse;
-  font-size: 0.7rem;
+  font-size: 1rem;
   border-radius: 0.4rem;
 }
 
